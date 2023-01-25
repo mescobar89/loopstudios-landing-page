@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="build/img/favicon-32x32.png">
+    <meta name="description" content="Desafío de Frontend Mentor con HTML5, CSS3 y JavaScript">
+    <title>Frontend Mentor | Loopstudios landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__mobile-menu">
+                <a href="/">
+                    <img class="header__logo" src="build/img/logo.svg" width="250" height="42" alt="Logo Loopstudios">
+                </a>
+
+                <div class="header-icon">
+                    <img class="header__icon-open" src="build/img/icon-hamburger.svg" width="20" height="20"
+                        alt="menu icon">
+                </div>
+            </div>
+
+            <div class="header__barra">
+                <div class="header__menu">
+                    <a href="/">
+                        <img class="header__logo" src="build/img/logo.svg" width="250" height="42"
+                            alt="Logo Loopstudios">
+                    </a>
+
+                    <div class="header__icon">
+                        <img class="header__icon-close" src="build/img/icon-close.svg" width="20" height="20"
+                            alt="menu icon">
+                    </div>
+                </div>
+
+                <nav class="navigation">
+                    <a href="#" class="navigation__link">About</a>
+                    <a href="#" class="navigation__link">Careers</a>
+                    <a href="#" class="navigation__link">Events</a>
+                    <a href="#" class="navigation__link">Products</a>
+                    <a href="#" class="navigation__link">Support</a>
+                </nav>
+            </div>
+
+            <h1 class="header__heading">Immersive experiences that deliver</h1>
+        </div> <!-- .container -->
+    </header>
+
+    <section class="leader">
+        <div class="leader__grid container">
+            <picture class="leader__box-image">
+                <source sizes="1920w, 768w" srcset="build/img/desktop/image-interactive-desktop.avif 1920w, 
+                                build/img/mobile/image-interactive.avif 768w" type="image/avif">
+                <source sizes="1920w, 768w" srcset="build/img/desktop/image-interactive-desktop.webp 1920w, 
+                                build/img/mobile/image-interactive.webp 768w" type="image/webp">
+                <source sizes="1920w, 768w" srcset="build/img/desktop/image-interactive-desktop.jpg 1920w, 
+                                build/img/mobile/image-interactive.jpg 768w" type="image/jpeg">
+
+                <img class="leader__image" loading="lazy" decoding="async" src="build/img/mobile/image-interactive.jpg"
+                    lazyalt="imagen" width="654" height="448">
+            </picture>
+
+            <div class="leader__content">
+                <h2 class="leader__heading">The leader in interactive VR</h2>
+                <p class="leader__text">Founded in 2011, Loopstudios has been producing world-class virtual reality
+                    projects for some of the best companies around the globe. Our award-winning
+                    creations have transformed businesses through digital experiences that bind
+                    to their brand.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="creations container">
+        <div class="creations__box-heading">
+            <h2 class="creations__heading">Our creations</h2>
+            <a href="#" class="creations__btn-inline">See all</a>
+        </div>
+
+        <ul class="creations__grid">
+            <li class="creation">
+                <a class="creation__gradient" href="#">
+                    <h3 class="creation__name">Deep <span>earth</span></h3>
+                </a>
+            </li>
+
+            <li class="creation">
+                <a class="creation__gradient" href="#">
+                    <h3 class="creation__name">Night <span>arcade</span></h3>
+                </a>
+            </li>
+
+            <li class="creation">
+                <a class="creation__gradient" href="#">
+                    <h3 class="creation__name">Soccer <span>team VR</span></h3>
+                </a>
+            </li>
+
+            <li class="creation">
+                <a class="creation__gradient" href="#">
+                    <h3 class="creation__name">The <span>grid</span></h3>
+                </a>
+            </li>
+
+            <li class="creation">
+                <a class="creation__gradient" href="#">
+                    <h3 class="creation__name">From up <span>above VR</span></h3>
+                </a>
+            </li>
+
+            <li class="creation">
+                <a class="creation__gradient" href="#">
+                    <h3 class="creation__name">Pocket <span>borealis</span></h3>
+                </a>
+            </li>
+
+            <li class="creation">
+                <a class="creation__gradient" href="#">
+                    <h3 class="creation__name">The <span>curiosity</span></h3>
+                </a>
+            </li>
+
+            <li class="creation">
+                <a class="creation__gradient" href="#">
+                    <h3 class="creation__name">Make it <span>fisheye</span></h3>
+                </a>
+            </li>
+        </ul>
+
+        <a href="#" class="creations__btn">See all</a>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__grid container">
+            <div class="footer__box">
+                <a href="/">
+                    <img class="footer__logo" src="build/img/logo.svg" width="250" height="42" alt="Logo Loopstudios">
+                </a>
+
+                <nav class="footer__navigation">
+                    <a href="#" class="footer__navigation-link">About</a>
+                    <a href="#" class="footer__navigation-link">Careers</a>
+                    <a href="#" class="footer__navigation-link">Events</a>
+                    <a href="#" class="footer__navigation-link">Products</a>
+                    <a href="#" class="footer__navigation-link">Support</a>
+                </nav>
+            </div>
+
+            <div class="footer__box">
+                <nav class="social">
+                    <a class="social__link" href="https://facebook.com">
+                        <span class="social__accessible">Facebook</span>
+                    </a>
+                    <a class="social__link" href="https://twitter.com">
+                        <span class="social__accessible">Twitter</span>
+                    </a>
+                    <a class="social__link" href="https://pinterest.com">
+                        <span class="social__accessible">Pinterest</span>
+                    </a>
+                    <a class="social__link" href="https://instagram.com">
+                        <span class="social__accessible">Instagram</span>
+                    </a>
+                </nav>
+
+                <p class="footer__copyright">© 2023 Loopstudios. All rights reserved.</p>
+            </div>
+        </div> <!-- .grid -->
+    </footer>
+
+    <div class="attribution">
+        <div class="attribution__grid">
+            <div>
+                <p class="attribution__text">Challenge by</p>
+                <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+            </div>
+
+            <div>
+                <p class="attribution__text">Coded by</p>
+                <a href="https://github.com/mescobar89">Martín Escobar</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./build/js/images.js"></script>
+    <script src="./build/js/app.js"></script>
+</body>
+
+</html>
